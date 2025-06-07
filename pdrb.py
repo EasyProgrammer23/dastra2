@@ -55,7 +55,7 @@ chart_pdrb = alt.Chart(filter_pdrb).mark_line(point=True).encode(
     x='Tahun:O',
     y=alt.Y(pdrb_option, title="PDRB", scale=alt.Scale(zero=False))
 ).properties(
-    title=f"{pdrb_option} dari {start_year} hingga {end_year}"
+    title=f"{pdrb_option} dari {start_year} hingga {end_year} dalam juta"
 )
 st.altair_chart(chart_pdrb, use_container_width=True)
 
@@ -113,7 +113,7 @@ chart_pdrb = alt.Chart(filter_pdrb).mark_line(point=True).encode(
     x='Tahun:O',
     y=alt.Y(pdrb_option2, title="PDRB per Kapita", scale=alt.Scale(zero=False))
 ).properties(
-    title=f"{pdrb_option2} dari {start_year} hingga {end_year}"
+    title=f"{pdrb_option2} dari {start_year} hingga {end_year}  dalam juta"
 )
 
 st.altair_chart(chart_pdrb, use_container_width=True)

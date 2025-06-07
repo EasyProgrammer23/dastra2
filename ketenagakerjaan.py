@@ -78,6 +78,7 @@ if len(data_dict) > 1:
     st.altair_chart(chart, use_container_width=True)
 else:
     st.warning("Pilih minimal satu kategori untuk ditampilkan.")
+st.write("Note : Tahun 2016 tidak terdapat data ketenagakerjaan karena Sakernas tidak dilakukan")
 
 st.subheader("Contoh Intepretasi")
 st.write("Semakin tinggi jumlah angkatan kerja berarti semakin banyak jumlah penduduk yang berpotensi untuk bekerja.")
@@ -85,7 +86,7 @@ st.subheader("Sumber Data")
 st.write("Survei Angkatan Kerja Nasional (SAKERNAS), Survei Sosial Ekonomi Nasional (SUSENAS), SUPAS, dan Sensus Penduduk.")
 
 st.write("## Tingkat Partisipasi Angkatan Kerja")
-st.write("ersentase angkatan kerja terhadap penduduk usia kerja.")
+st.write("Persentase angkatan kerja terhadap penduduk usia kerja.")
 # Pilihan kolom PDRB untuk divisualisasikan
 min_year = ketenagakerjaan["Tahun"].min()
 max_year = ketenagakerjaan["Tahun"].max()
@@ -135,7 +136,7 @@ if len(data_dict) > 1:
     st.altair_chart(chart, use_container_width=True)
 else:
     st.warning("Pilih minimal satu kategori untuk ditampilkan.")
-    
+st.write("Note : Tahun 2016 tidak terdapat data ketenagakerjaan karena Sakernas tidak dilakukan")    
 st.subheader("Contoh Intepretasi")
 st.write("Semakin tinggi TPAK menunjukkan bahwa semakin tinggi pula pasokan tenaga kerja (labor supply ) yang tersedia untuk memproduksi barang dan jasa dalam suatu perekonomian. Contoh: Jika TPAK sebesar 71.69 persen di Kab. Sanggau tahun 2024, maka dari 100 penduduk usia 15 tahun ke atas, terdapat sebanyak 71 hingga 72 orang tersedia untuk memproduksi pada periode tertentu di Kab. Sanggau tahun 2024.")
 st.subheader("Sumber Data")
@@ -192,7 +193,7 @@ if len(data_dict) > 1:
     st.altair_chart(chart, use_container_width=True)
 else:
     st.warning("Pilih minimal satu kategori untuk ditampilkan.")
-    
+st.write("Note : Tahun 2016 tidak terdapat data ketenagakerjaan karena Sakernas tidak dilakukan")   
 st.subheader("Contoh Intepretasi")
 st.write("TPT yang tinggi menunjukkan bahwa terdapat banyak angkatan kerja yang tidak diserap pada pasar kerja. Misal: TPT Sanggau pada tahun 2024 adalah 3.71, artinya dari 100 penduduk usia 15 tahun ke atas yang tersedia untuk memproduksi barang dan jasa (angkatan kerja) terdapat 3 hingga 4 orang merupakan pengangguran")
 st.subheader("Sumber Data")
@@ -249,7 +250,7 @@ if len(data_dict) > 1:
     st.altair_chart(chart, use_container_width=True)
 else:
     st.warning("Pilih minimal satu kategori untuk ditampilkan.")
-
+st.write("Note : Tahun 2016 tidak terdapat data ketenagakerjaan karena Sakernas tidak dilakukan")
 st.subheader("Contoh Intepretasi")
 st.write("Peluang seseorang yang termasuk dalam angkatan kerja untuk dapat terserap dalam pasar kerja atau dapat bekerja. Semakin besar RK, maka semakin baik pula kondisi ketenagakerjaan dalam suatu wilayah.")
 st.subheader("Sumber Data")
